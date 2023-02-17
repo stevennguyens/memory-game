@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', Arial, Helvetica, sans-serif
+}
+
+:root {
+    --main-color: rgb(245, 211, 227);  
+    --secondary-color: rgb(121, 138, 168);
+    --accent-color: rgb(29, 30, 8);
+    --transparent: rgba(236, 234, 224, 0.796);
+    --transparent-dark:rgba(230, 228, 218, 0.617);
+    --light-font: rgb(69, 69, 72);
+}
+
+.App {
+    border: 6px solid #f4f4f4;
+    margin: 50px;
+    border-radius: 10px; 
+    padding-bottom: 50px;
+}
+
+body {
+    background: var(--main-color);
+}
+
+.header {
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 30px 0px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 40px
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    background: var(--transparent);
+    border-radius: 9px;
+    color: var(--light-font);
+    cursor: pointer
+}
+
+.btn:hover {
+    background: var(--transparent-dark)
+}
+
+.btn-grey {
+    background: var(--transparent-dark);
+    cursor: none;
+    pointer-events: none;
+}
+
+.card-count {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-count-input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    opacity: 80%;
+    width: 40px;
+    text-align: center;
+}
+
+.score-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 10px;
+    color: var(--light-font);
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    gap: 35px
+}
+
+.score-container p:nth-child(1) {
+    justify-self: end;
+}
+
+.score-container p:nth-child(2) {
+    justify-self: start;
+}
+
+.score-container span {
+    font-weight: 600;
+}
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+} */
+
+.input-error {
+    padding-top: 40px;
+}
+
+.card-container {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--light-font)
+}
+
+.card {
+    background: var(--transparent);
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.card:hover {
+    background: var(--transparent-dark)
+}
+
+.card img {
+    height: 150px;
+    pointer-events: none;
+}
